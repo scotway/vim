@@ -40,3 +40,6 @@
 [submodule "bundle/youcompleteme"]
 	path = bundle/youcompleteme
 	url = https://github.com/valloric/youcompleteme
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git

@@ -28,6 +28,9 @@ highlight link SyntasticStyleWarningSign SignColumn
 syntax on
 "set background=dark
 "colorscheme solarized
+"COLOR STYLES 
+let g:airline_powerline_fonts = 1
+"let g:airline_theme='powerlineish'
 
 filetype plugin indent on
 
