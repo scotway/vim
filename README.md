@@ -11,4 +11,10 @@ To pull down:
 * git submodule init
 * git submodule update
 
+You Complete Me:
+* cd YouCompleteMe
+* git submodule update --init --recursive
+* ./install.py --clang-completer
+* ./install.py --tern-completer
+
 Boom!
