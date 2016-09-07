@@ -48,3 +48,6 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1 
 "set foldmethod=syntax
+
+"VDEBUG
+let g:vdebug_options = {'path_maps' : { "/var/www/html/lcms" : "/Users/scottconway/rtn-projects/centos_7_vagrant/html/lcms"} } 
