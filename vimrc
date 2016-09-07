@@ -18,7 +18,7 @@ let g:syntastic_style_error_symbol = '⁉️'
 let g:syntastic_warning_symbol = '⚠️'
 let g:syntastic_style_warning_symbol = '💩'
 
-map :ntt :NERDTreeToggle
+map <c-n> :NERDTreeToggle<CR>
 map <c-]> :bnext<CR>
 map <c-[> :bprevious<CR>
 
