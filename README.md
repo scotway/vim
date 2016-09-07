@@ -16,5 +16,6 @@ You Complete Me:
 * git submodule update --init --recursive
 * ./install.py --clang-completer
 * ./install.py --tern-completer
+* NOTE: You may need to install cmake to run the .py script
 
 Boom!

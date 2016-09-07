@@ -30,8 +30,8 @@ syntax on
 "colorscheme solarized
 "COLOR STYLES 
 let g:airline_powerline_fonts = 1
-"let g:airline_theme='powerlineish'
-
+let g:airline_theme = 'molokai'
+        
 filetype plugin indent on
 
 "Ultisnip
@@ -47,4 +47,7 @@ filetype plugin indent on
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 let g:javascript_plugin_flow = 1 
+"TERN FOR VIM
+let g:tern_map_keys = 1
+let g:tern_show_argument_hints='on_hold'
 "set foldmethod=syntax
