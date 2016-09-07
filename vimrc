@@ -19,6 +19,8 @@ let g:syntastic_warning_symbol = '⚠️'
 let g:syntastic_style_warning_symbol = '💩'
 
 map :ntt :NERDTreeToggle
+map <c-]> :bnext<CR>
+map <c-[> :bprevious<CR>
 
 highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
@@ -30,7 +32,10 @@ syntax on
 "colorscheme solarized
 "COLOR STYLES 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'molokai'
+let g:airline_theme = 'powerlineish'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
         
 filetype plugin indent on
 
