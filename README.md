@@ -6,6 +6,13 @@ This repo using submodules for pathogen. To add:
 * git commit -m 'Added vim-fugitive'
 * git push
 
+To Remove a submodule:
+* Delete the relevant section from the .gitmodules file.
+* Stage the .gitmodules changes git add .gitmodules.
+* Delete the relevant section from .git/config .
+* Run git rm --cached path_to_submodule (no trailing slash).
+* Run rm -rf .git/modules/path_to_submodule.
+
 To pull down:
 * cd ~/.vim
 * git submodule init

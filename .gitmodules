@@ -46,3 +46,4 @@
 [submodule "bundle/fonts"]
 	path = bundle/fonts
 	url = https://github.com/powerline/fonts.git
+

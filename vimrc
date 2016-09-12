@@ -1,6 +1,5 @@
 execute pathogen#infect()
-    
-set t_Co=256 ruler laststatus=2 number relativenumber title tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab cursorline clipboard=unnamed
+set t_Co=256 ruler laststatus=2 number relativenumber title tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab cursorline list listchars=tab:▸\ ,trail:>,eol:¬ clipboard=unnamed
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
