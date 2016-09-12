@@ -1,6 +1,6 @@
 execute pathogen#infect()
     
-set t_Co=256 ruler laststatus=2 number relativenumber title tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+set t_Co=256 ruler laststatus=2 number relativenumber title tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab cursorline clipboard=unnamed
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -36,7 +36,8 @@ let g:airline_theme = 'powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-        
+hi CursorLine term=bold cterm=bold guibg=LightBlue
+
 filetype plugin indent on
 
 "Ultisnip
