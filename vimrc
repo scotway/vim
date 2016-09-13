@@ -1,5 +1,5 @@
 execute pathogen#infect()
-set t_Co=256 ruler laststatus=2 number relativenumber title tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab cursorline list listchars=tab:▸\ ,trail:>,eol:¬ clipboard=unnamed
+set t_Co=256 ruler laststatus=2 number relativenumber title tabstop=4 softtabstop=0  shiftwidth=4 smarttab cursorline list listchars=tab:▸\ ,trail:>,eol:¬ clipboard=unnamed
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -18,6 +18,7 @@ let g:syntastic_warning_symbol = '⚠️'
 let g:syntastic_style_warning_symbol = '💩'
 
 map <c-n> :NERDTreeToggle<CR>
+map <c-b> :TagbarToggle<CR>
 map <c-]> :bnext<CR>
 map <c-[> :bprevious<CR>
 

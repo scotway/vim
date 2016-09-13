@@ -47,3 +47,9 @@
 	path = bundle/fonts
 	url = https://github.com/powerline/fonts.git
 
+[submodule "bundle/vim-tags"]
+	path = bundle/vim-tags
+	url = https://github.com/szw/vim-tags.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
