@@ -30,13 +30,16 @@ highlight link SyntasticStyleWarningSign SignColumn
 syntax on
 "set background=dark
 "colorscheme solarized
+"https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg
 "COLOR STYLES 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
-hi CursorLine term=bold cterm=bold guibg=LightBlue
+set cursorline cursorcolumn
+hi CursorLine term=bold cterm=bold ctermbg=236
+hi CursorColumn term=bold cterm=bold ctermbg=235
 
 filetype plugin indent on
 
