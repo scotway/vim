@@ -19,8 +19,8 @@ let g:syntastic_style_warning_symbol = '💩'
 
 map <c-n> :NERDTreeToggle<CR>
 map <c-b> :TagbarToggle<CR>
-map <c-]> :bnext<CR>
-map <c-[> :bprevious<CR>
+map <c-h> :bnext<CR>
+map <c-l> :bprevious<CR>
 
 highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
