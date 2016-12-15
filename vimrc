@@ -7,10 +7,15 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-map <c-n> :NERDTreeToggle<CR>
-map <c-b> :TagbarToggle<CR>
 map <c-l> :bnext<CR>
 map <c-h> :bprevious<CR>
+map <c-7> :bd<CR>
+map <c-0> :%!python -m json.tool<CR>
+
+"Plugin maps
+map <c-n> :NERDTreeToggle<CR>
+map <c-b> :TagbarToggle<CR>
+map <c-c> :VCoolor<CR>
 
 "Linting
 let g:syntastic_always_populate_loc_list = 1
@@ -19,6 +24,8 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_sass_checkers = ['scss_lint']
+let g:syntastic_scss_checkers=["scss_lint"]
 
 let g:syntastic_error_symbol = '--'
 let g:syntastic_style_error_symbol = '=='
@@ -33,11 +40,10 @@ highlight link SyntasticWarningSign LintWarn
 highlight link SyntasticStyleErrorSign LintError
 highlight link SyntasticStyleWarningSign LintWarn
 
-syntax on
 "set background=dark
 "colorscheme solarized
 "https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg
-"COLOR STYLES 
+"COLOR STYLES
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
 let g:airline#extensions#tabline#enabled = 1
@@ -48,6 +54,7 @@ hi CursorLine term=bold cterm=bold ctermbg=236
 hi CursorColumn term=bold cterm=bold ctermbg=235
 
 filetype plugin indent on
+syntax on
 
 "Ultisnip
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -68,6 +75,9 @@ let g:tern_map_keys = 1
 let g:tern_show_argument_hints='on_hold'
 "set foldmethod=syntax
 
+"CTRL P
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 "PHP Autocomplete
 let g:SuperTabDefaultCompletionType = ""
 "ctags -R --fields=+aimlS --languages=php
@@ -82,8 +92,15 @@ augroup VimCSS3Syntax
 
  autocmd FileType css setlocal iskeyword+=-
 augroup END
+
+
 "disabling arrow keys
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
+"macros
+let @c='I//€kd'
+let @v='I€kD€kDj€kb€kd'
+

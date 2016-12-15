@@ -62,3 +62,18 @@
 [submodule "bundle/vim-react-snippets"]
 	path = bundle/vim-react-snippets
 	url = https://github.com/epilande/vim-react-snippets.git
+[submodule "bundle/SQLComplete.vim"]
+	path = bundle/SQLComplete.vim
+	url = https://github.com/vim-scripts/SQLComplete.vim.git
+[submodule "bundle/dbext.vim"]
+	path = bundle/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim.git
+[submodule "bundle/vCoolor.vim"]
+	path = bundle/vCoolor.vim
+	url = https://github.com/KabbAmine/vCoolor.vim.git
+[submodule "bundle/vim-sass-lint"]
+	path = bundle/vim-sass-lint
+	url = https://github.com/gcorne/vim-sass-lint.git
+[submodule "bundle/csv.vim"]
+	path = bundle/csv.vim
+	url = https://github.com/chrisbra/csv.vim.git
