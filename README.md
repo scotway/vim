@@ -26,3 +26,5 @@ You Complete Me:
 * NOTE: You may need to install cmake to run the .py script
 
 Boom!
+
+NOTE: There is a powerline font to install to get the special character on vim to work. Roboto Mono for Powerline
