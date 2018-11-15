@@ -1,5 +1,5 @@
 execute pathogen#infect()
-set t_Co=256 ruler laststatus=2 number relativenumber title tabstop=2 softtabstop=2 expandtab  shiftwidth=2 smarttab cursorline list listchars=tab:▸\ ,trail:>,eol:¬ clipboard=unnamed,  nocompatible
+set t_Co=256 ruler laststatus=2 number nofoldenable relativenumber title tabstop=2 softtabstop=2 expandtab  shiftwidth=2 smarttab cursorline list listchars=tab:▸\ ,trail:>,eol:¬ clipboard=unnamed,  nocompatible
 "set t_Co=256 ruler laststatus=2 number relativenumber title tabstop=4 softtabstop=0  shiftwidth=4 smarttab cursorline list listchars=tab:▸\ ,trail:>,eol:¬ clipboard=unnamed,  nocompatible
 "set up tmp dir files, "http://vi.stackexchange.com/questions/177/what-is-the-purpose-of-swap-files
 
@@ -19,6 +19,7 @@ map <c-l> :bnext<CR>
 map <c-h> :bprevious<CR>
 map <c-m> :bd<CR>
 map <c-k> :ls<CR>
+map <c-j> :set foldmethod=indent<CR>
 map <c-t> :exec PrettyJson()<CR>
 map <c-o> :%retab!<CR>
 map <c-n> :NERDTreeToggle<CR>
