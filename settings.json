@@ -1,0 +1,9 @@
+{
+    "vim.disableAnnoyingNeovimMessage": true,
+    "window.zoomLevel": 1,
+    "vim.cmdLineInitialColon": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "terminal.integrated.copyOnSelection": true,
+    "workbench.colorTheme": "Monokai"
+}
